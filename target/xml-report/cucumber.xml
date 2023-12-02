@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="87.123" tests="5" skipped="0" failures="5" errors="0">
+<testcase classname="Admin tests add to cart functionalty" name="Admin tests add to cart negative test - Example #1.1" time="25.202">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id='continue']&quot;}
+  (Session info: MicrosoftEdge=119.0.2151.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d6f775f4615a79ae8fe7b1bc998eb627, findElement {using=xpath, value=//input[@id='continue']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.93, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58944}, msedge: {msedgedriverVersion: 119.0.2151.97 (42f50dec8b7a..., userDataDir: C:\Users\FURKAN\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58944/devtoo..., se:cdpVersion: 119.0.2151.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6f775f4615a79ae8fe7b1bc998eb627">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='continue']"}
+  (Session info: MicrosoftEdge=119.0.2151.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d6f775f4615a79ae8fe7b1bc998eb627, findElement {using=xpath, value=//input[@id='continue']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.93, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58944}, msedge: {msedgedriverVersion: 119.0.2151.97 (42f50dec8b7a..., userDataDir: C:\Users\FURKAN\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58944/devtoo..., se:cdpVersion: 119.0.2151.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6f775f4615a79ae8fe7b1bc998eb627
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
+	at page.SauceDemoPage.verifyAdminShouldNotPassNextStep(SauceDemoPage.java:231)
+	at stepdefinitions.SauceDemoStepDef.adminShouldntPassNextStep(SauceDemoStepDef.java:110)
+	at ✽.Admin shouldnt pass next step(file:///C:/Users/FURKAN/IdeaProjects/PracticeProject/src/test/resources/features/checkout.feature:25)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Admin goes to login page "loginPage"..................................passed
+And Admin fills with positive datas and click login button..................passed
+And Admin adds items to the cart............................................passed
+Then Admin verifies the page navigates to cart..............................passed
+Then Admin verifies Admin can see items which he added to cart..............passed
+And Admin navigates checkout page and enters negative datas ".", ".", "."...passed
+Then Admin shouldnt pass next step..........................................failed
+Then Admin verifies the items and total prices..............................skipped
+Then Admin verifies order is completed......................................skipped
+And Admin closes the browser................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Admin tests add to cart functionalty" name="Admin tests add to cart negative test - Example #1.2" time="15.396">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id='add-to-cart-sauce-labs-backpack']&quot;}
+  (Session info: MicrosoftEdge=119.0.2151.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d6f775f4615a79ae8fe7b1bc998eb627, findElement {using=xpath, value=//button[@id='add-to-cart-sauce-labs-backpack']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.93, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58944}, msedge: {msedgedriverVersion: 119.0.2151.97 (42f50dec8b7a..., userDataDir: C:\Users\FURKAN\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58944/devtoo..., se:cdpVersion: 119.0.2151.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6f775f4615a79ae8fe7b1bc998eb627">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='add-to-cart-sauce-labs-backpack']"}
+  (Session info: MicrosoftEdge=119.0.2151.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d6f775f4615a79ae8fe7b1bc998eb627, findElement {using=xpath, value=//button[@id='add-to-cart-sauce-labs-backpack']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.93, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58944}, msedge: {msedgedriverVersion: 119.0.2151.97 (42f50dec8b7a..., userDataDir: C:\Users\FURKAN\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58944/devtoo..., se:cdpVersion: 119.0.2151.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6f775f4615a79ae8fe7b1bc998eb627
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at page.SauceDemoPage.addingItemsOnCartMenu(SauceDemoPage.java:140)
+	at stepdefinitions.SauceDemoStepDef.adminAddsItemsToTheCart(SauceDemoStepDef.java:67)
+	at ✽.Admin adds items to the cart(file:///C:/Users/FURKAN/IdeaProjects/PracticeProject/src/test/resources/features/checkout.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Admin goes to login page "loginPage"..................................passed
+And Admin fills with positive datas and click login button..................passed
+And Admin adds items to the cart............................................failed
+Then Admin verifies the page navigates to cart..............................skipped
+Then Admin verifies Admin can see items which he added to cart..............skipped
+And Admin navigates checkout page and enters negative datas "1", "1", "1"...skipped
+Then Admin shouldnt pass next step..........................................skipped
+Then Admin verifies the items and total prices..............................skipped
+Then Admin verifies order is completed......................................skipped
+And Admin closes the browser................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Admin tests add to cart functionalty" name="Admin tests add to cart negative test - Example #1.3" time="15.409">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id='add-to-cart-sauce-labs-backpack']&quot;}
+  (Session info: MicrosoftEdge=119.0.2151.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d6f775f4615a79ae8fe7b1bc998eb627, findElement {using=xpath, value=//button[@id='add-to-cart-sauce-labs-backpack']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.93, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58944}, msedge: {msedgedriverVersion: 119.0.2151.97 (42f50dec8b7a..., userDataDir: C:\Users\FURKAN\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58944/devtoo..., se:cdpVersion: 119.0.2151.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6f775f4615a79ae8fe7b1bc998eb627">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='add-to-cart-sauce-labs-backpack']"}
+  (Session info: MicrosoftEdge=119.0.2151.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d6f775f4615a79ae8fe7b1bc998eb627, findElement {using=xpath, value=//button[@id='add-to-cart-sauce-labs-backpack']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.93, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58944}, msedge: {msedgedriverVersion: 119.0.2151.97 (42f50dec8b7a..., userDataDir: C:\Users\FURKAN\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58944/devtoo..., se:cdpVersion: 119.0.2151.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6f775f4615a79ae8fe7b1bc998eb627
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at page.SauceDemoPage.addingItemsOnCartMenu(SauceDemoPage.java:140)
+	at stepdefinitions.SauceDemoStepDef.adminAddsItemsToTheCart(SauceDemoStepDef.java:67)
+	at ✽.Admin adds items to the cart(file:///C:/Users/FURKAN/IdeaProjects/PracticeProject/src/test/resources/features/checkout.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Admin goes to login page "loginPage"..................................passed
+And Admin fills with positive datas and click login button..................passed
+And Admin adds items to the cart............................................failed
+Then Admin verifies the page navigates to cart..............................skipped
+Then Admin verifies Admin can see items which he added to cart..............skipped
+And Admin navigates checkout page and enters negative datas "", "", ""......skipped
+Then Admin shouldnt pass next step..........................................skipped
+Then Admin verifies the items and total prices..............................skipped
+Then Admin verifies order is completed......................................skipped
+And Admin closes the browser................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Admin tests add to cart functionalty" name="Admin tests add to cart negative test - Example #1.4" time="15.372">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id='add-to-cart-sauce-labs-backpack']&quot;}
+  (Session info: MicrosoftEdge=119.0.2151.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d6f775f4615a79ae8fe7b1bc998eb627, findElement {using=xpath, value=//button[@id='add-to-cart-sauce-labs-backpack']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.93, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58944}, msedge: {msedgedriverVersion: 119.0.2151.97 (42f50dec8b7a..., userDataDir: C:\Users\FURKAN\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58944/devtoo..., se:cdpVersion: 119.0.2151.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6f775f4615a79ae8fe7b1bc998eb627">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='add-to-cart-sauce-labs-backpack']"}
+  (Session info: MicrosoftEdge=119.0.2151.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d6f775f4615a79ae8fe7b1bc998eb627, findElement {using=xpath, value=//button[@id='add-to-cart-sauce-labs-backpack']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.93, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58944}, msedge: {msedgedriverVersion: 119.0.2151.97 (42f50dec8b7a..., userDataDir: C:\Users\FURKAN\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58944/devtoo..., se:cdpVersion: 119.0.2151.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6f775f4615a79ae8fe7b1bc998eb627
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at page.SauceDemoPage.addingItemsOnCartMenu(SauceDemoPage.java:140)
+	at stepdefinitions.SauceDemoStepDef.adminAddsItemsToTheCart(SauceDemoStepDef.java:67)
+	at ✽.Admin adds items to the cart(file:///C:/Users/FURKAN/IdeaProjects/PracticeProject/src/test/resources/features/checkout.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Admin goes to login page "loginPage"..................................passed
+And Admin fills with positive datas and click login button..................passed
+And Admin adds items to the cart............................................failed
+Then Admin verifies the page navigates to cart..............................skipped
+Then Admin verifies Admin can see items which he added to cart..............skipped
+And Admin navigates checkout page and enters negative datas "w", "w", "w"...skipped
+Then Admin shouldnt pass next step..........................................skipped
+Then Admin verifies the items and total prices..............................skipped
+Then Admin verifies order is completed......................................skipped
+And Admin closes the browser................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Admin tests add to cart functionalty" name="Admin tests add to cart negative test - Example #1.5" time="15.409">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id='add-to-cart-sauce-labs-backpack']&quot;}
+  (Session info: MicrosoftEdge=119.0.2151.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d6f775f4615a79ae8fe7b1bc998eb627, findElement {using=xpath, value=//button[@id='add-to-cart-sauce-labs-backpack']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.93, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58944}, msedge: {msedgedriverVersion: 119.0.2151.97 (42f50dec8b7a..., userDataDir: C:\Users\FURKAN\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58944/devtoo..., se:cdpVersion: 119.0.2151.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6f775f4615a79ae8fe7b1bc998eb627">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='add-to-cart-sauce-labs-backpack']"}
+  (Session info: MicrosoftEdge=119.0.2151.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d6f775f4615a79ae8fe7b1bc998eb627, findElement {using=xpath, value=//button[@id='add-to-cart-sauce-labs-backpack']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.93, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58944}, msedge: {msedgedriverVersion: 119.0.2151.97 (42f50dec8b7a..., userDataDir: C:\Users\FURKAN\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58944/devtoo..., se:cdpVersion: 119.0.2151.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6f775f4615a79ae8fe7b1bc998eb627
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at page.SauceDemoPage.addingItemsOnCartMenu(SauceDemoPage.java:140)
+	at stepdefinitions.SauceDemoStepDef.adminAddsItemsToTheCart(SauceDemoStepDef.java:67)
+	at ✽.Admin adds items to the cart(file:///C:/Users/FURKAN/IdeaProjects/PracticeProject/src/test/resources/features/checkout.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Admin goes to login page "loginPage"..................................passed
+And Admin fills with positive datas and click login button..................passed
+And Admin adds items to the cart............................................failed
+Then Admin verifies the page navigates to cart..............................skipped
+Then Admin verifies Admin can see items which he added to cart..............skipped
+And Admin navigates checkout page and enters negative datas "*", "*", "*"...skipped
+Then Admin shouldnt pass next step..........................................skipped
+Then Admin verifies the items and total prices..............................skipped
+Then Admin verifies order is completed......................................skipped
+And Admin closes the browser................................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
